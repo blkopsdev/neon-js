@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CityOfZion/neon-js.git"
+    "url": "git+https://github.com/aphtoken/neon-js.git"
   },
   "keywords": [
     "neo",
