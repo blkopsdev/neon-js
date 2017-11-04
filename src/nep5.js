@@ -39,6 +39,10 @@ export const getTokenBalance = (net, scriptHash, address) => {
   const script = sb.emitAppCall(scriptHash, 'balanceOf', [addrScriptHash]).str
   return doInvokeScript(net, script, false)
     .then((res) => {
-      return fixed82num(res.stack[0].value)
+      //Joel-MAWS - Adding support for Integer return type of balanceOf for APH
+  		if(  res.stack[0].type == "Integer"  )
+  				return  res.stack[0].value / 100000000;
+  		else
+  			return (0, _utils.fixed82num)(res.stack[0].value);
     })
 }
