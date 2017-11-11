@@ -229,7 +229,7 @@ export const getAPIEndpoint = (net) => {
   if (net === 'MainNet') {
     return 'http://api.wallet.cityofzion.io'
   } else if (net === 'AphelionNet') {
-    return 'http://testnet-api.wallet.cityofzion.io'
+    return 'https://neon-wallet-db.herokuapp.com'
   } else {
     return 'http://testnet-api.wallet.cityofzion.io'
   }
