@@ -228,7 +228,7 @@ export const doSendTx = (net, transaction, id = 42) => {
 export const getAPIEndpoint = (net) => {
   if (net === 'MainNet') {
     return 'http://api.wallet.cityofzion.io'
-  } else if (net === 'AphelionNet') {
+  } else if (net === 'AphelionMainNet') {
     return 'https://aphelionmainnet.allcode.com'
   } else if (net === 'AphelionTestNet') {
     return 'https://aphelionnet.allcode.com'
@@ -273,7 +273,7 @@ export const getClaimAmounts = (net, address) => {
  * @return {Promise<string>} The URL of the best performing node or the custom URL provided.
  */
 export const getRPCEndpoint = (net) => {
-  if (net !== 'TestNet' && net !== 'MainNet' && net !== 'AphelionNet' && net !== 'AphelionTestNet') return Promise.resolve(net)
+  if (net !== 'TestNet' && net !== 'MainNet' && net !== 'AphelionMainNet' && net !== 'AphelionTestNet') return Promise.resolve(net)
   const apiEndpoint = getAPIEndpoint(net)
   return axios.get(apiEndpoint + '/v2/network/best_node').then((response) => {
     return response.data.node
