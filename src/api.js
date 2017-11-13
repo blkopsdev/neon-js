@@ -228,10 +228,10 @@ export const doSendTx = (net, transaction, id = 42) => {
 export const getAPIEndpoint = (net) => {
   if (net === 'MainNet') {
     return 'http://api.wallet.cityofzion.io'
-  } else if (net === 'AphelionNet') {
-    return 'https://aphelionmainnet.allcode.com'
+  } else if (net === 'AphelionMainNet') {
+    return 'http://neon-wallet-db-production.herokuapp.com'
   } else if (net === 'AphelionTestNet') {
-    return 'https://aphelionnet.allcode.com'
+    return 'http://neon-wallet-db.herokuapp.com'
   } else {
     return 'http://testnet-api.wallet.cityofzion.io'
   }
