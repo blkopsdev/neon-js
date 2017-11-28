@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aphtoken/neon-js.git"
+    "url": "git+https://github.com/doctordev/neon-js.git"
   },
   "keywords": [
     "neo",
@@ -50,7 +50,7 @@
     "javascript",
     "libraries"
   ],
-  "author": "Ethan Fast <ejhfast@gmail.com> (https://github.com/Ejhfast)",
+  "author": "doctordev <doctordev0613@gmail.com> (https://github.com/Ejhfast)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CityOfZion/neon-js/issues"
